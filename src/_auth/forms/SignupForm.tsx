@@ -22,7 +22,7 @@ import { Button } from "@/components/ui/button"
 "use client"
 import { useForm } from "react-hook-form";
 
-import { SignupValidation } from "../../lib/validation/Index";
+import { SignupValidation } from "../../lib/validation/index";
 import Loader from "@/components/shared/Loader"
 
 import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queries";
@@ -50,7 +50,7 @@ const SignupForm = () => {
       password: "",
     },
   })
-  const { mutateAsync: createUserAccount, isPending: isCreatingAccount } = useCreateUserAccount();
+  const { mutateAsync: createUserAccount, isLoading: isCreatingAccount } = useCreateUserAccount();
   const { mutateAsync: signInAccount } = useSignInAccount();
  
   // 2. Define a submit handler.

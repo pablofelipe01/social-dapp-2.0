@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button"
 "use client"
 import { useForm } from "react-hook-form";
 
-import { SigninValidation } from "../../lib/validation/Index";
+import { SigninValidation } from "../../lib/validation/index";
 import Loader from "@/components/shared/Loader"
 
 import {  useSignInAccount } from "@/lib/react-query/queries";

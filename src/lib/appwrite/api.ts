@@ -544,66 +544,66 @@ export async function updateUser(user: IUpdateUser) {
     console.log(error);
   }
 }
-// ============================== ADD FOLLOWER
-export async function addFollower(followerId, followingId) {
-  try {
-    const result = await databases.createDocument(
-      appwriteConfig.databaseId,
-      'followerCollectionId', // This needs to be created
-      ID.unique(),
-      { followerId, followingId }
-    );
-    return result;
-  } catch (error) {
-    console.log(error);
-  }
-}
+// // ============================== ADD FOLLOWER
+// export async function addFollower(followerId, followingId) {
+//   try {
+//     const result = await databases.createDocument(
+//       appwriteConfig.databaseId,
+//       'followerCollectionId', // This needs to be created
+//       ID.unique(),
+//       { followerId, followingId }
+//     );
+//     return result;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-// ============================== REMOVE FOLLOWER
-export async function removeFollower(followerId, followingId) {
-  try {
-    const followers = await databases.listDocuments(
-      appwriteConfig.databaseId,
-      'followerCollectionId',
-      [Query.equal('followerId', followerId), Query.equal('followingId', followingId)]
-    );
-    if (followers.total > 0) {
-      const result = await databases.deleteDocument(
-        appwriteConfig.databaseId,
-        'followerCollectionId',
-        followers.documents[0].$id
-      );
-      return result;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
+// // ============================== REMOVE FOLLOWER
+// export async function removeFollower(followerId, followingId) {
+//   try {
+//     const followers = await databases.listDocuments(
+//       appwriteConfig.databaseId,
+//       'followerCollectionId',
+//       [Query.equal('followerId', followerId), Query.equal('followingId', followingId)]
+//     );
+//     if (followers.total > 0) {
+//       const result = await databases.deleteDocument(
+//         appwriteConfig.databaseId,
+//         'followerCollectionId',
+//         followers.documents[0].$id
+//       );
+//       return result;
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-// ============================== GET FOLLOWERS
-export async function getFollowers(userId) {
-  try {
-    const followers = await databases.listDocuments(
-      appwriteConfig.databaseId,
-      'followerCollectionId',
-      [Query.equal('followingId', userId)]
-    );
-    return followers;
-  } catch (error) {
-    console.log(error);
-  }
-}
+// // ============================== GET FOLLOWERS
+// export async function getFollowers(userId) {
+//   try {
+//     const followers = await databases.listDocuments(
+//       appwriteConfig.databaseId,
+//       'followerCollectionId',
+//       [Query.equal('followingId', userId)]
+//     );
+//     return followers;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-// ============================== GET FOLLOWING
-export async function getFollowing(userId) {
-  try {
-    const following = await databases.listDocuments(
-      appwriteConfig.databaseId,
-      'followerCollectionId',
-      [Query.equal('followerId', userId)]
-    );
-    return following;
-  } catch (error) {
-    console.log(error);
-  }
-}
+// // ============================== GET FOLLOWING
+// export async function getFollowing(userId) {
+//   try {
+//     const following = await databases.listDocuments(
+//       appwriteConfig.databaseId,
+//       'followerCollectionId',
+//       [Query.equal('followerId', userId)]
+//     );
+//     return following;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
