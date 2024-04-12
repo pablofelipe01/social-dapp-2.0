@@ -24,6 +24,11 @@ export const sidebarLinks = [
     route: "/create-post",
     label: "Create Post",
   },
+  {
+    imgURL: "/assets/icons/token.svg",
+    route: "/claim-token",
+    label: "Claim Token",
+  },
 ];
 
 export const bottombarLinks = [
@@ -46,5 +51,10 @@ export const bottombarLinks = [
     imgURL: "/assets/icons/gallery-add.svg",
     route: "/create-post",
     label: "Create",
+  },
+  {
+    imgURL: "/assets/icons/token.svg",
+    route: "/claim-token",
+    label: "Claim Token",
   },
 ];

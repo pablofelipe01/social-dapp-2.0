@@ -10,6 +10,7 @@ import {
   PostDetails,
   UpdateProfile,
   AllUsers,
+  
 } from "@/_root/pages";
 import AuthLayout from "./_auth/AuthLayout";
 import RootLayout from "./_root/RootLayout";
@@ -18,6 +19,7 @@ import SigninForm from "@/_auth/forms/SigninForm";
 import { Toaster } from "@/components/ui/toaster";
 
 import "./globals.css";
+import ClaimSocialToken from './_root/pages/ClaimSocialToken';
 
 const App = () => {
   return (
@@ -36,6 +38,7 @@ const App = () => {
           <Route path="/saved" element={<Saved />} />
           <Route path="/all-users" element={<AllUsers />} />
           <Route path="/create-post" element={<CreatePost />} />
+          <Route path="/claim-token" element={<ClaimSocialToken />} />
           <Route path="/update-post/:id" element={<EditPost />} />
           <Route path="/posts/:id" element={<PostDetails />} />
           <Route path="/profile/:id/*" element={<Profile />} />
