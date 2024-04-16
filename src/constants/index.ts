@@ -4,21 +4,21 @@ export const sidebarLinks = [
     route: "/",
     label: "Home",
   },
-  {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/explore",
-    label: "Explore",
-  },
+  // {
+  //   imgURL: "/assets/icons/wallpaper.svg",
+  //   route: "/explore",
+  //   label: "Explore",
+  // },
   {
     imgURL: "/assets/icons/people.svg",
     route: "/all-users",
     label: "People",
   },
-  {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
-  },
+  // {
+  //   imgURL: "/assets/icons/bookmark.svg",
+  //   route: "/saved",
+  //   label: "Saved",
+  // },
   {
     imgURL: "/assets/icons/gallery-add.svg",
     route: "/create-post",
@@ -29,6 +29,11 @@ export const sidebarLinks = [
     route: "/claim-token",
     label: "Claim Token",
   },
+  {
+    imgURL: "/assets/icons/008.svg",
+    route: "/payment-page",
+    label: "Pricing",
+  },
 ];
 
 export const bottombarLinks = [
@@ -37,16 +42,16 @@ export const bottombarLinks = [
     route: "/",
     label: "Home",
   },
-  {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/explore",
-    label: "Explore",
-  },
-  {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
-  },
+  // {
+  //   imgURL: "/assets/icons/wallpaper.svg",
+  //   route: "/explore",
+  //   label: "Explore",
+  // },
+  // {
+  //   imgURL: "/assets/icons/bookmark.svg",
+  //   route: "/saved",
+  //   label: "Saved",
+  // },
   {
     imgURL: "/assets/icons/gallery-add.svg",
     route: "/create-post",
@@ -56,5 +61,10 @@ export const bottombarLinks = [
     imgURL: "/assets/icons/token.svg",
     route: "/claim-token",
     label: "Claim Token",
+  },
+  {
+    imgURL: "/assets/icons/008.svg",
+    route: "/payment-page",
+    label: "Pricing",
   },
 ];
