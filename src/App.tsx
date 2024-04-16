@@ -19,9 +19,12 @@ import SignupForm from "@/_auth/forms/SignupForm";
 import SigninForm from "@/_auth/forms/SigninForm";
 import { Toaster } from "@/components/ui/toaster";
 
-import "./globals.css";
 import ClaimSocialToken from './_root/pages/ClaimSocialToken';
 import PaymentPage from './_root/pages/PaymentPage';
+import PrivacyPolicy from './_root/pages/PrivacyPolicy';
+import TermsOfService from './_root/pages/TermsOfService';
+
+import "./globals.css";
 
 const App = () => {
   return (
@@ -46,6 +49,8 @@ const App = () => {
           <Route path="/profile/:id/*" element={<Profile />} />
           <Route path="/update-profile/:id" element={<UpdateProfile />} />
           <Route path="/payment-page" element={<PaymentPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
         </Route>
       </Routes>
 

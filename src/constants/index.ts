@@ -4,11 +4,7 @@ export const sidebarLinks = [
     route: "/",
     label: "Home",
   },
-  // {
-  //   imgURL: "/assets/icons/wallpaper.svg",
-  //   route: "/explore",
-  //   label: "Explore",
-  // },
+  
   {
     imgURL: "/assets/icons/people.svg",
     route: "/all-users",
@@ -33,6 +29,16 @@ export const sidebarLinks = [
     imgURL: "/assets/icons/008.svg",
     route: "/payment-page",
     label: "Pricing",
+  },
+  {
+    imgURL: "/assets/icons/wallpaper.svg",
+    route: "/privacy-policy",
+    label: "Policy",
+  },
+  {
+    imgURL: "/assets/icons/wallpaper.svg",
+    route: "/terms-of-service",
+    label: "Terms of Service",
   },
 ];
 
