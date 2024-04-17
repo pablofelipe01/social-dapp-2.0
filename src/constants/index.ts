@@ -30,15 +30,15 @@ export const sidebarLinks = [
     route: "/payment-page",
     label: "Pricing",
   },
-  {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/privacy-policy",
-    label: "Policy",
-  },
+  // {
+  //   imgURL: "/assets/icons/wallpaper.svg",
+  //   route: "/privacy-policy",
+  //   label: "Policy",
+  // },
   {
     imgURL: "/assets/icons/wallpaper.svg",
     route: "/terms-of-service",
-    label: "Terms of Service",
+    label: "T of S / Policy",
   },
 ];
 
