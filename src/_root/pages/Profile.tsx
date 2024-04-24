@@ -7,7 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import { Button } from "@/components/ui";
+// import { Button } from "@/components/ui";
 import { LikedPosts } from "@/_root/pages";
 import { useUserContext } from "@/context/AuthContext";
 import { useGetUserById } from "@/lib/react-query/queries";
@@ -67,8 +67,8 @@ const Profile = () => {
 
             <div className="flex gap-8 mt-10 items-center justify-center xl:justify-start flex-wrap z-20">
               <StatBlock value={currentUser.posts.length} label="Posts" />
-              <StatBlock value={123} label="Followers" />
-              <StatBlock value={20} label="Following" />
+              {/* <StatBlock value={123} label="Followers" />
+              <StatBlock value={20} label="Following" /> */}
             </div>
 
             <button
@@ -76,7 +76,7 @@ const Profile = () => {
               className="shad-button_primary px-8 py-2 flex justify-center items-center mt-7 max-w-screen-sm"
               type="button">
               <p className="small-medium md:base-medium text-center xl:text-left">
-                <i className="fas fa-coins ml-1 text-purple-500"></i> Exclusive Content
+                <i className="fas fa-coins ml-1 text-purple-500"></i> Invest In Creator
               </p>
             </button>
 
@@ -101,9 +101,9 @@ const Profile = () => {
               </Link>
             </div>
             <div className={`${user.id === id && "hidden"}`}>
-              <Button type="button" className="shad-button_primary px-8">
+              {/* <Button type="button" className="shad-button_primary px-8">
                 Follow
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
