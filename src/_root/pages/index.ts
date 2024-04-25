@@ -1,5 +1,5 @@
 // import PrivacyPolicy from './PricacyPolicy';
-export { default as Home } from "./Home";
+export { default as Home } from "./AllUsers";
 export { default as Explore } from "./Explore";
 export { default as Saved } from "./Saved";
 export { default as CreatePost } from "./CreatePost";
